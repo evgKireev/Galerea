@@ -16,12 +16,7 @@ const Cards = () => {
       {status === 'pennding' ? (
         <Loader />
       ) : (
-        <div
-          className={classNames(styles.cardsInner, {
-            [styles.cardsInnerSearch]:
-              !!searchValue || !selectAutor || !selectLocation,
-          })}
-        >
+        <div className={classNames(styles.cardsInner)}>
           {cards.map((card, index) => (
             <Card key={index} {...card} />
           ))}
