@@ -1,0 +1,26 @@
+.cardsInner {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px 20px;
+  margin-bottom: 40px;
+}
+
+.cardsInnerSearch {
+  justify-content: space-between;
+}
+
+@media (max-width: 1024px) {
+  .cardsInner {
+    justify-content: center;
+  }
+}
+
+// @media (max-width: 768px) {
+// }
+
+// @media (max-width: 670px) {
+// }
+
+// @media (max-width: 320px) {
+// }

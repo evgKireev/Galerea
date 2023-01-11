@@ -1,0 +1,47 @@
+@import '_vars.scss';
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto', system-ui, Tahoma, sans-serif;
+  font-size: 18px;
+  background-color: $bg;
+  transition: all 0.9s;
+  color: #ffffff;
+}
+
+.bodyWhite {
+  background-color: #ffffff;
+  transition: all 0.9s;
+  color: #242426;
+  a {
+    color: #242426;
+  }
+}
+
+.conatiner {
+  max-width: 1366px;
+  padding: 35px 123px 97px 123px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .conatiner {
+    padding: 35px 42px 62px 42px;
+  }
+}
+
+@media (max-width: 768px) {
+  .conatiner {
+    padding: 35px 34px 54px 34px;
+  }
+}
+
+@media (max-width: 320px) {
+  .conatiner {
+    padding: 25px 20px 34px 20px;
+  }
+}

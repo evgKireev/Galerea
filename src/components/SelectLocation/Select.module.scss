@@ -1,0 +1,108 @@
+.wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.select {
+  width: 100%;
+  position: relative;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  background-color: transparent;
+  height: 45px;
+  padding: 15px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  white-space: nowrap;
+}
+
+.selectActive {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.selectActiveInner {
+  opacity: 0;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  transform: translateY(-50px);
+  transition: all 0.9s;
+  position: absolute;
+  width: 100%;
+  border: 1px solid #ffffff;
+  top: 44px;
+  right: 0;
+  border-top: none;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: #0c0c0c;
+  height: 275px;
+  pointer-events: none;
+}
+
+.selectEvent {
+  pointer-events: all;
+}
+
+.selectActiveInner::-webkit-scrollbar {
+  width: 9px;
+  height: 3px;
+}
+
+.selectActiveInner::-webkit-scrollbar-thumb {
+  background-color: #7b7b7b;
+  border-radius: 9em;
+  box-shadow: inset 1px 1px 10px #f3faf7;
+}
+
+.item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 20px 22px;
+  cursor: pointer;
+  transition: all 0.9s;
+
+  &:hover {
+    transition: all 0.9s;
+    background-color: #fff;
+    color: #0c0c0c;
+  }
+}
+
+.blockModal {
+  z-index: 1;
+  opacity: 100%;
+  transform: translateY(1px);
+  transition: all 0.9s;
+}
+
+.btnBlock {
+  display: flex;
+  gap: 11px;
+  svg {
+    cursor: pointer;
+  }
+}
+
+.themeWhite {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.themeWhiteModal {
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.themeWhiteItem {
+  &:hover {
+    background-color: #0c0c0c;
+    color: #fff;
+  }
+}

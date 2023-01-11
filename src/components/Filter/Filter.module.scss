@@ -1,0 +1,16 @@
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 45px;
+  gap: 20px;
+}
+
+
+
+@media (max-width: 670px) {
+  .inner {
+    flex-direction: column;
+  }
+}
+
